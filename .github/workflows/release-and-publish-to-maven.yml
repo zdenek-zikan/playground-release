@@ -37,6 +37,6 @@ jobs:
           access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-          gpg-enabled: "true"
+          gpg-enabled: "false"
           gpg-key-id: A5B891CE2AE14918
           gpg-key: ${{ secrets.GPG_PRIVATE_KEY }}
