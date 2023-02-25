@@ -26,7 +26,6 @@ jobs:
         uses: qcastel/github-actions-maven-release@master
         env:
           JAVA_HOME: /usr/lib/jvm/java-17-openjdk/
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         with:
           release-branch-name: "main"
 
