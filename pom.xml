@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>playground-release</name>
-    <description>playground-release</description>
+    <description>Testing release mechanisms</description>
     <url>https://github.com/zdenek-zikan/playground-release</url>
 
     <developers>
