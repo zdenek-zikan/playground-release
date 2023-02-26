@@ -39,4 +39,4 @@ jobs:
 
           gpg-enabled: "true"
           gpg-key-id: A5B891CE2AE14918
-          gpg-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          gpg-key: ${{ secrets.GPG_KEY }}
