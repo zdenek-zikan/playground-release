@@ -1,3 +1,3 @@
 # playground-release
 
-testing the release process actions
+testing the release process tools
