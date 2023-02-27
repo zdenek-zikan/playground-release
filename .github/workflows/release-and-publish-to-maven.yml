@@ -34,9 +34,13 @@ jobs:
 
           maven-args: "-P release -Dmaven.javadoc.skip=true -DskipTests -Ddockerfile.skip -DdockerCompose.skip -Dmaven.deploy.skip=true"
 
-#          access-token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
           gpg-enabled: "true"
           gpg-key-id: A5B891CE2AE14918
           gpg-key: ${{ secrets.GPG_KEY }}
+
+      - name: Create release with changelog
+        uses: konfer-be/action-create-release-from-tag@v1.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
