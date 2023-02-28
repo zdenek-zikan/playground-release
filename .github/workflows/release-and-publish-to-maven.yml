@@ -41,6 +41,6 @@ jobs:
           gpg-key: ${{ secrets.GPG_KEY }}
 
       - name: Create Github release
-        uses: ncipollo/release-action@v1
+        uses: konfer-be/action-create-release-from-tag@v1.0.2
         with:
-          artifacts: "*.tar.gz,*.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
