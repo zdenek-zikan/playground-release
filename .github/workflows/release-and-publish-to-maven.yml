@@ -39,3 +39,8 @@ jobs:
           gpg-enabled: "true"
           gpg-key-id: A5B891CE2AE14918
           gpg-key: ${{ secrets.GPG_KEY }}
+
+      - name: Create Github release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "*.tar.gz,*.zip"
