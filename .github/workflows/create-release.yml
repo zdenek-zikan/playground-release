@@ -1,4 +1,4 @@
-name: Releases
+name: Create release from tag
 
 on:
   push:
@@ -11,7 +11,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Create Github release
         uses: ncipollo/release-action@v1
         with:
